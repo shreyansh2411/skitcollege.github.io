@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>SALARY CALCULATION</title>
+	<link href="css/stylesheet.css" type="text/css" rel="stylesheet"/>
+	<link rel="icon" href="img/skitlogo.png" type="image/x-icon"/>
+</head>
+<body onload="load()">
+	<div class="wrapper">
+		<div><header>
+			
+				
+					<h1><font>Swami Keshvanand Institute of Technology, Management & Gramothan</font></h1>
+					<img src="img/skit.png"  width="1000 "  height="280">
+			<nav>
+				<table>
+					<tr>
+						<th><a href="index.html" >home</a></th>
+						<th><a href="login.html">login</a></th>
+						<th><a href="register.html">register</a></th>
+						<th><a href="salary.html" class="current">salary calculation</a></th>
+						<th><a href="contact.html">contact</a></th>
+					</tr>
+				</table>
+			</nav>
+			</herder>
+		</div>
+			<h3 id="welcome"></h3>
+		<fieldset>
+			<legend>Enter Salary Details</legend>
+			<form name="name">
+				Basic Salary:<br>
+				<input id="bs" type="text" size="30" value="0" required="required"><br>
+				DA:<br>
+				<input id="da" type="text" size="30" value="0"><br>
+				HRA:<br>
+				<input id="hra" type="text" size="30" value="0"><br>
+				Medical:<br>
+				<input id="med" type="text" size="30" value="0"><br>
+				Conveyance:<br>
+				<input id="con" type="text" size="30" value="0">
+			</form>	
+				<span id="result" ></span><br>
+				<button name="cs" onclick="return calc()">calculate salary </button>
+				
+		</fieldset><br>
+		<footer>
+			Contact Us At agashreyansh@gmail.com
+		</footer>
+	</div>
+	<script>
+		function calc () {
+		var	val1 = parseInt(document.name.bs.value);
+		var val2 = parseInt(document.name.da.value);
+		var val3 = parseInt(document.name.hra.value);
+		var val4 = parseInt(document.name.med.value);
+		var val5 = parseInt(document.name.con.value);
+		var gs = val1 * (val2 + val3 + 100) / 100 + val4 + val5;2
+		document.getElementById('result').innerHTML="Your Gross Salary is " + gs;
+		
+		}
+		function load () {
+
+			var uname=location.search.substr(location.search.indexOf("=")+1);
+			if(uname == "" || uname == null || uname == " "){
+				alert("you must login first");
+				window.location.assign("login.html")
+    		}
+    		else{
+    			document.getElementById('welcome').innerHTML=" Hello  "+ uname;
+    		}	
+    		
+		}
+	</script>
+</body>
+</html>

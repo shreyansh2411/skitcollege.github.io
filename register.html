@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Registration</title>
+	<link href="css/stylesheet.css" type="text/css" rel="stylesheet"/>	
+	
+	<link rel="icon" href="img/skitlogo.png" type="image/x-icon"/>	
+</head>
+<body>
+	<div class="wrapper">
+		<div><header>
+			
+				<h1><font>Swami Keshvanand Institute of Technology, Management & Gramothan</font></h1>
+				<img src="img/skit.png"  width="1000 "  height="280">
+			<nav>
+				<table>
+					<tr>
+						<th><a href="index.html" >home</a></th>
+						<th><a href="login.html" >login</a></th>
+						<th><a href="register.html" class="current">register</a></th>
+						<th><a href="salary.html">salary calculation</a></th>
+						<th><a href="contact.html">contact</a></th>
+					</tr>
+				</table>
+			</nav>
+			</herder>
+		</div>
+		<div class="form">
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Personal Details</legend>
+				<label>Name:<br />
+					<input type="text" name="username" size="40" maxlength="50" required="required"/></label><br />
+				<label>Father's Name:<br />
+					<input type="text" name="fname" size="40" maxlength="50"/> </label><br />
+				<label>Date of Birth:<br />
+					<input type="date" name="date" size="40" required="required"/></label><br />
+				<input type="radio"	name="gender" value="male" checked="checked"/>Male
+				<input type="radio" name="gender" value="female" />Female<br />
+				Profession:<br /><select name="proff">
+				<option value="teacher">teacher</option>
+				<option value="manager">manager</option>
+				<option value="engineer">engineer</option>
+				<option value="student">student</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Contect Details</legend>
+				<label>Email:<br />
+					<input type="email" name="email" required="required" size="40"/><br />
+				<label>Mobile No.:<br />
+					<input id="mno" type=" number" name="mno"  size="40" maxlength="10" required="required" onkeyup="myFunction(); return false;"/><br />
+				<label>Address:<br />
+					<textarea name="add" cols="49" rows="2" required="required"></textarea></label><br />
+			</fieldset>
+			<fieldset>
+				<legend>Login Details</legend>
+				<label>Username:</label><br/>
+				<input type="text" name="uname" size="40" required="required"></br>
+				<label>Password:</label><br/>
+				<input id="pass1" type="password" name="pass1" size="40" required="required" onchange="checkPass()"><br/>
+				<label>Confirm Password:</label><br/>
+				<input id="pass2" type="password" name="pass2" size="40" required="required" onkeyup="matchPass(); return false;"><br>
+				<span id="demo" name="message"></span><br/>
+				<button id="sub" type="submit" name="submit" onclick="submition()">submit</button>
+			</fieldset>
+		</div>
+		<footer>
+			Contact Us At agashreyansh@gmail.com
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/javascript.js" ></script>
+	</body>
+</html>
+

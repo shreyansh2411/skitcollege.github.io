@@ -1,0 +1,93 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+display: block;}
+.wrapper{
+	width:80%;
+	margin-left: 10%;
+}
+#grad1
+{
+
+}
+body{
+	background: -webkit-linear-gradient(#1BB495, #C4FFDE); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#1BB495, #C4FFDE); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#1BB495, #C4FFDE); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#1BB495, #C4FFDE); /* Standard syntax (must be last) */
+	color:black;
+	font-size: 20px;
+}
+img{
+	
+	float:left;
+	width: 20%;
+	height: 180px;
+}
+h1{
+	font-size: 50px;
+	text-transform: uppercase;
+	color:#ff7148;
+	background-color:DarkCyan;
+	width:80%;
+	text-align: center;
+	align:center;
+	margin-left:200px;
+	margin-bottom: 0px;
+}
+table{
+	text-transform:uppercase;
+	text-align: center;
+	background-color: #efefef;
+	margin-left: 180px;
+	width:80%;
+	height:60px;
+	border: 2px solid;
+	border-spacing: 1px;
+
+}
+table th{
+	margin-right: 20px;
+	background-color: gray;
+	text-decoration: none;
+}
+th:hover{
+	font-size: 20px;
+	font-family: cursive;
+	background-color: green;
+}
+th a:hover, nav a.current{
+	color:orange;
+}
+h2{
+	
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+#content{
+	width: 80%;
+	
+	float: left;
+}
+fieldset{
+	background-color: #cdcab9;
+	font-size:30px;
+	height:300px;
+	width:30%;
+	margin-top: 30px;
+	margin-left: 35%;
+	text-align:center;
+	padding-top:20px;
+	line-height:15px;
+}
+
+footer{
+	clear:both;
+	font-size:100%;
+	background-color: #435258;
+	width:100%;
+	height: 30px;
+	text-align:center;
+	
+	color:#efefef;
+}
